@@ -1,0 +1,68 @@
+/* el # se utuliza para un id en contexto*/
+#titulo{
+    color: chocolate;
+}
+/* p. se utiliza para las clases que contengan texto*/
+p.texto{
+    color: blue;
+}
+
+p.especial{
+    color: mediumseagreen;
+}
+/* se utiliza para todos los parametros de div que contengan p*/
+div p {
+    color: brown;
+}
+/* se utiliza para todos los parametros de div que contengan h2*/
+div h2, div h3{
+    color: darkmagenta;
+}
+
+/* se utiliza para todos los parametros que no se han modificado*/
+* {
+    font-size: 24px;
+}
+
+.color{
+    /*color: #f00;          valor exagecimal*/
+    /*color: rgb(0,255, 0); valor rgb*/
+    /* border: 2px yellowgreen solid; */
+    
+    /*ESTILOS DE BORDER
+    dotted
+    dashed
+    solid
+    double
+    groove
+    ridge
+    inset
+    outset
+    none
+    hidden*/
+
+    border-style: solid;    
+    border-color: blue;
+    border-radius: 8px;/*readius es para el borde de las esquinas*/
+    border-width: 4px;/*width es para el tamaño del borde*/
+}
+
+
+#fondo{
+    background-color: teal; /*aplica el color de fondo a la letra*/
+    /* opacity: 0.7;transparencia a el elemento completo no solo al color sino tambien la letra o imagen */
+    height: 300px;
+    /*background-image:url("pantalos3.jpg") ;
+    background-size: contain;contain se utiliza para que se adapte el tamaño de la imagen a la pagina
+    background-repeat: no-repeat;no-repeat se utiliza para que la imagen no se repita*/
+    background: red url("pantalos3.jpg") repeat-x center bottom / contain;
+    
+}
+
+.margen{
+    background-color: chocolate;
+    /*      derecha,izquierda,abajo,arriba*/
+    margin: 15px; /* margin añade un espacio sobre cualquier imagen o texto*/
+    padding: 50px 50px 10px 40px;/* padding añade un espacio dentro de el mismo*/
+    border: solid 3px black;
+}

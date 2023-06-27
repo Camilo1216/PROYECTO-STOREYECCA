@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head><!--head es para el encabezado-->
+    <title>nom_de_la_pag</title>
+    <style>
+        table, th, td{
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body><!--Body es el contenido de la pagina-->
+
+    <table style="width: 400px;"><!-- table genera una tabla-->
+        <thead><!--thead agrupar elementos que se encuentran en los titulos de la tabla-->
+            <tr><!--tr genera una fila dentro de la tabla-->
+                <th>nombre</th><!--th genera los titulos de la tabla-->
+                <th>edad</th>
+                <th>celular</th>
+            </tr>
+        </thead>
+        <tbody><!--tbody sirve para poder identificar o agrupar todas las filas-->
+            <tr>
+                <td>yeimer</td><!--td genera los campos de la tabla-->
+                <td>22 años</td>
+                <td>3209293458</td>
+            </tr>
+        </tbody>
+        <tfoot><!--tfoot se utiliza para definir un pie de tabla Es comúnmente utilizado para mostrar subtotale-->
+            <td></td>
+            <td></td>
+            <td>320929</td>
+        </tfoot>
+        
+    </table>
+    <!--ETIQUETAS-->
+    <h1>titulo</h1> <!--h1 etiquetas para titulos-->
+    <p>parrafo</p> <!-- p etiqueta de parrafo-->
+    <hr> <!-- hr etiqueta de linea de separacion-->
+    <samp style="color: blue;">seleccionar</samp><!--spam etiqueta para seleccionar un texto-->
+    <br> <!--br etiqueta para separar texto-->
+    <a target="_blank" href="https://instagram.com">botton</a><!--a etiqueta de impervinculo-->
+    <img src="img/LOGO.jpeg" width="120 px"/> 
+    <form action="/formulario" method="post"> <!--action ruta a enviar el formulario-->
+        <label for="usuario">usuario</label><!-- label etiqueta representa un texo a la interfaz de usuario-->
+        <input value="yeimer" name="usuario" type="texto" id="usuario" placeholder="correo electronico"/> <!--form etiqueta de formulario y input es para recibir los datos-->
+        <br>
+        <label for="contrasena">contrasena</label>
+        <input value="importante" name="clave" type="password" id="contrasena" placeholder="clave"/>
+        <br>
+        <label for="comentario">Comentario</label><br>
+        <textarea rows="10" cols="40" id="comentario" name="comentario" placeholder="ingrese comentario"></textarea> <!--texarea se utiliza para un formulario de comentarios-->
+        <br>
+        <button type="submit"> <img src="img/LOGO.jpeg" width="26"/> </button>
+    <ul><!--ul lista no ordenada-->
+        <li style="list-style-type: circle;">elemento 1</li> <!-- li item de la lista-->
+        <li style="list-style-type: circle;">elemento 2</li>
+        <li style="list-style-type: circle;">elemento 3</li>
+    </ul> 
+    <ol><!-- ol lista ordenada-->
+        <li value="16">elemento 1</li>
+        <li>elemento 2</li>
+        <li>elemento 3</li>
+    </ol>
+    </form>
+    
+
+    <!--PROPIEDADES-->
+    target="_blank" <!--target propiedad para abrir un vinculo en otra ventana--> 
+    width="400 px" <!--width propiedad de ancho-->
+    height="400 px" <!--width propiedad de alto-->
+    for="" <!-- for determinar el id del elemento asociado al titulo-->
+    id="" <!--id identificador -->
+    name="" <!--name identificador para la base de datos-->
+    placeholder="" <!-- placeholder genera un texto transparente-->
+    clow="" <!-- cols columnas en una tabla-->
+    rows="" <!--rows lista en una tabla-->
+    type="" <!--type determina el tipo de entrada-->
+    type="texo"
+    type="email"
+    type="password"
+    type="radio"
+    type="checkbox"
+    type="file"
+    type="submit"
+    type="botton"
+    type="reset"
+
+    action="" <!--action ruta del servidor para enviar los datos-->
+    method="" <!--metodo para enviar los valores dependiendo de la url-->
+    value="" <!--value es valor por defecto-->
+    
+</body>
+</html> 
