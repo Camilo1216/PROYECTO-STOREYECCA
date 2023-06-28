@@ -20,8 +20,8 @@ div h2, div h3{
 }
 
 /* se utiliza para todos los parametros que no se han modificado*/
-* {
-    font-size: 24px;
+div.margen {
+    font-size: 30px;
 }
 
 .color{
@@ -62,7 +62,37 @@ div h2, div h3{
 .margen{
     background-color: chocolate;
     /*      derecha,izquierda,abajo,arriba*/
-    margin: 15px; /* margin añade un espacio sobre cualquier imagen o texto*/
+    margin: 70px; /* margin añade un espacio sobre cualquier imagen o texto*/
     padding: 50px 50px 10px 40px;/* padding añade un espacio dentro de el mismo*/
     border: solid 3px black;
+    height: 90px; /*alto*/
+    width: 40px;/*ancho*/
+    overflow: scroll;/*hidden todo el contenido que no alcance a mostrarse dentro del elemento lo ocualta*/
+    /*scroll ventana movible*/
+    outline: 1px solid green;  /*contorno de un elemento*/  
+}
+
+.text{
+    font-family: 'Bebas Neue';/*fuente del texto*/
+    text-align: center;/*alinear el texto*/
+    font-size: 40px;
+    color: blue;
+    text-decoration: overline; /*decora el texto como subrayar, linea por debajo, por encima del texto*/
+    text-shadow: 3px 5px 8px blue;/*sombra para el texto, derecha,abajo,opacidad*/
+}
+
+a:link{ 
+    color: teal;
+}
+
+a:visited{ /*cuando el link ya ha sido visitado*/
+    color: red;
+}
+
+a:hover{ /*cuando se pasa el mouse por el link*/
+    color: yellow;
+}
+
+a:active{ /*es cuando da clic en el link*/
+    color: palevioletred;
 }
