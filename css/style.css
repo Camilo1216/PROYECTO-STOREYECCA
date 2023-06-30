@@ -96,3 +96,68 @@ a:hover{ /*cuando se pasa el mouse por el link*/
 a:active{ /*es cuando da clic en el link*/
     color: palevioletred;
 }
+
+ul{
+    background-color: blueviolet;
+    list-style-type: none;/*sirve para quitar los puntos de la lista*/
+    padding: 0; /*quita el espacio el espacio de los puntos*/
+    /* list-style-position: inside;cambia la posicion de la letra cuando hay un salto de linea */
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;/*elimina la separacion de los bordes en la tabla*/
+    
+}
+
+td,th{
+    border: 3px double red;
+    padding: 5px;
+}
+
+th{
+    background-color: tomato;/*color subrayado*/
+    color: blue;/*cambio el color de la fuente(letra)*/
+    text-align: left;
+}
+
+tr:nth-child(even){ /*cambia los colores de la fila solo a los impares(even)*/
+    background-color: #b1a7d8;
+}
+
+tr:hover{
+    background-color: rgb(201, 160, 160);
+    cursor: pointer;/*coloca el icono de seleccionar sobre el texto*/
+}
+
+span{
+    display: block;/*salto de linea*/
+    /* display: none;ocultar los elementos */
+    /* visibility: hidden;oculta tambien los elementos */
+    max-width: 700px;/*define el ancho maximo pero a la vez se adapta al tamaño de la ventana cuando el valor es minimo*/
+    background-color: red;
+}
+
+.inline{
+    display: inline;/*quita el salto de linea */
+}
+
+#posicion{
+    position: fixed; /*define la posicion de un texto y dependiendo al tipo se puede dejar quieto en el encabezado*/
+    left:0%; /*izquierda*/
+    /* top: 25px; abajo */
+    background-color: #b1a7d8;
+    width: 900px;
+}
+
+.left{
+    float: left;/*hace flotar el texto en la posicion de la izquierda*/
+    width: 200px;
+    height: 200px;
+}
+.right{
+    float: right;
+}
+.container{
+    height: 200px;/*altura*/
+}
