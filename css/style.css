@@ -161,3 +161,25 @@ span{
 .container{
     height: 200px;/*altura*/
 }
+
+.card{
+    border: dotted 1px darkgoldenrod;
+    border-radius: 5px; /*tipo de radio*/
+    margin: 8px; /*es la parte de afuera del borde lo que quiere que este apartado de lo demas*/
+    padding: 4px; /*la parte interior del borde*/
+    width: 2px;
+}
+
+.inline-block{
+    display: inline-block;/* se les puede manus de navegacion*/
+    height: 30px;
+    background-color: blueviolet;
+}
+
+.center{
+    padding: 40px;
+    text-align: center; /*centra el texto  */
+    width: 200px;
+    margin: auto; /**/
+    background-color: aqua;
+}
