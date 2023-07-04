@@ -24,20 +24,20 @@
                 </div>
             </div>
             <div class="contenedor__login-registrar">
-                <form action="" class="formulario__login">
+                <form action="php/iniciar_Sesion_be.php" method="post" class="formulario__login">
                     <h2>INICIAR SESION</h2>
-                    <input type="text" placeholder="Correo Electronico">
-                    <input type="text" placeholder="Contraseña">
+                    <input type="text" placeholder="Correo Electronico" name="correo_electronico_usuario">
+                    <input type="password" placeholder="Contraseña" name="contrasenia_usuario">
                     <button type="submit">Entrar</button>
                 </form>
 
-                <form action="" class="formulario__registro">
+                <form action="php/registro_usuario_be.php" method="post" class="formulario__registro">
                     <h2>REGISTRARSE</h2>
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="telefono">
-                    <input type="text" placeholder="Dirreccion">
-                    <input type="text" placeholder="Correo Electronico">
-                    <input type="password" placeholder="Contraseña">
+                    <input type="text" placeholder="Nombre" name="nombre">
+                    <input type="text" placeholder="telefono" name="telefono">
+                    <input type="text" placeholder="Dirreccion" name="direccion">
+                    <input type="text" placeholder="Correo Electronico" name="correo_electronico">
+                    <input type="password" placeholder="Contraseña" name="contrasenia">
                     <button type="submit">Enviar</button>
                 </form>
             </div>

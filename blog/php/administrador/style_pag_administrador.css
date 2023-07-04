@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    background-color: rgb(12, 86, 89, 0.6);
+}
+.contenedor_todo{
+    margin-left: 60px;
+    margin-top: 90px;
+
+}
+
+.formulario_crear_categoria form{
+    max-width: 100%px;
+    margin-left: 400px;
+    background-color: #810c0c;
+}
+
+.formulario_crear_producto{
+    max-width: 100%;
+    left: 650px;
+    background-color: #fff;
+}
+
+.boton_categoria button,
+.boton_producto button,
+.boton_lista_productos button,
+.boton_pedidos button{
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    background: transparent;
+    font-weight: 600;
+    border-radius: 6px;
+}
+.boton_categoria button:hover,
+.boton_producto button:hover,
+.boton_lista_productos button:hover,
+.boton_pedidos button:hover{
+    background-color: #fff;
+    color: rgb(12, 86, 89, 0.6);
+    cursor: pointer;
+}
+
+.boton_categoria button,
+.boton_producto button,
+.boton_lista_productos button,
+.boton_pedidos button{
+    margin-top:30px;
+}

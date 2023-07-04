@@ -53,3 +53,9 @@ footer{
 footer section{
     float: right;
 }
+
+a:hover {
+    cursor: pointer;
+    color: azure;
+}
+
