@@ -1,0 +1,84 @@
+html {
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+.contenedor_todo{
+    padding: auto;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+} 
+
+.btn_iniciar_registrarse button{
+
+    padding: 10px 10px;
+    margin: auto;
+    width: auto;
+    border: 0px;
+    border-radius: 7px;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+.btn_iniciar_registrarse button:hover{
+    background-color: rgb(87, 87, 182);
+    color: #fff;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(75, 194, 75);
+}
+
+header{
+    background-color: rgb(84, 84, 222);
+    color: white;
+    padding: 40px;
+}
+
+header h1{
+    font-size: 55px;
+    text-align: center;
+}
+
+.container{
+    width: max-content;
+    margin: 0 auto;
+    /* background-color: chartreuse; */
+    border-radius: 6px;
+}
+
+section article{
+                         /*tiempo que toma la transcion*/
+    transition: box-shadow 0.3s ease;/*demorabilidad de la cinematicas*/
+    background-color: #fff;
+    /*vertical,horizontal*/
+    margin: 20px 5px;
+    border-radius: 20px;
+    padding: 10px 0;
+    cursor: pointer;
+    
+}
+section article:hover{
+    box-shadow: 0 0.4rem 0.7rem red;
+}
+
+section article h2, section article p{
+    margin: 7px;
+}
+
+footer{
+    background-color: blue;
+    padding: 15px;
+    color: #fff;
+}
+
+footer section{
+    float: right;
+}
+
+a:hover {
+    cursor: pointer;
+    color: azure;
+}
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" href="../css/style_pag_administrador.css">
+    <title>ADMINISTRADOR</title>
+    <div class="contenedor_caja_usuario">
+        <p>hola malparidos todos</p>
+    </div>
+</head>
+<body>
+    <div class="contenedor_todo">
+
+        <div class="boton_categoria">
+            <form action="" class="formulario_crear_categoria">
+                <input type="text" placeholder="Nombre de la categoria" name="nombre_categoria">
+                <button id="boton" type="submit">CREAR</button>
+                <button id="boton_cancelar" type="button">CANCELAR</button>
+            </form>
+            <button id="btn_crear_categoria" type="submit">CREAR CATEGORIA</button>
+        </div>
+        <div class="boton_producto">
+            <form action="../php/pag_administrador_be.php" method="post" class="formulario_crear_producto">
+                <input type="text" placeholder="Nombre del producto" name="nombre_producto"><br>
+                <input type="text" placeholder="Descripcion" name="descripcion_producto"><br>
+                <input type="text" placeholder="Cantidad" name="cantidad_producto"><br>
+                <input type="text" placeholder="valor" name="valor_producto"><br>
+                <input type="file" name="imagen_producto"><br>
+                <button id="boton" type="submit">CREAR</button>
+                <button id="boton_cancelar1" type="button">CANCELAR</button>
+            </form>
+            <button id="btn_crear_producto" type="submit">CREAR PRODUCTO</button>
+        </div>
+        <div class="boton_lista_productos">
+            <button type="submit">LISTA DE PRODUCTOS</button>
+        </div>
+        <div class="boton_pedidos">
+            <button type="submit">PEDIDOS</button>
+        </div>
+        <div class="contenedor_caja_usuario">
+        </div>
+    </div>
+    <script src="../js/scrip_administrador.js"></script>
+</body>
+</html>
+
+

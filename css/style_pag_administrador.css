@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 15px;
+}
+.contenedor_caja_usuario {
+    background-color: rgb(84, 174, 194);
+    border-radius: 5px;
+    position: absolute;
+    right: 40px;
+    top: 30px;
+    padding: 10px;
+}
+
+.contenedor_caja_usuario p{
+    color: #fff;
+}
+
+body{
+    width: 100%;
+    background-color: rgb(12, 86, 89, 0.6);
+}
+.contenedor_todo{
+    margin-left: 60px;
+    margin-top: 90px;
+
+}
+
+.formulario_crear_categoria{
+    max-width: 100%;
+    padding: 40px 8px;
+    margin: 10px 0px;
+    top: 60px;
+    background-color: #e7e2e2;
+    position: absolute;
+    border-radius: 8px;
+    display: none;
+    transition: left 600ms;
+}
+
+.formulario_crear_producto{
+    max-width: 100%;
+    padding: 40px 8px;
+    margin: 10px 0px;
+    top: 60px;
+    background-color: #e7e2e2;
+    position: absolute;
+    border-radius: 8px;
+    display: none;
+    transition: left 600ms;
+}
+
+
+.formulario_crear_producto input,
+.formulario_crear_categoria input{
+    padding: 10px;
+    margin: 10px;
+}
+
+.boton_categoria button,
+.boton_producto button,
+.boton_lista_productos button,
+.boton_pedidos button{
+    padding: 10px 40px;
+    border: 2px solid rgb(255, 255, 255, 0,1);
+    background: transparent;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.boton_categoria button:hover,
+.boton_producto button:hover,
+.boton_lista_productos button:hover,
+.boton_pedidos button:hover{
+    background-color: #fff;
+    color: rgb(12, 86, 89, 0.6);
+    cursor: pointer;
+}
+
+.boton_categoria button,
+.boton_producto button,
+.boton_lista_productos button,
+.boton_pedidos button{
+    margin-top:30px;
+}
+
+#boton{
+background-color: rgb(72, 72, 214, 0.8); 
+color: #fff;
+}
+
+#boton:hover{
+    background-color: rgb(51, 51, 141, 0.9);
+    cursor: pointer;
+}
+
+#boton_cancelar,
+#boton_cancelar1{
+    background-color: rgb(194, 26, 26, 0.8);
+    color: #fff;
+}
+
+#boton_cancelar:hover,
+#boton_cancelar1:hover{
+    background-color: rgb(112, 32, 32, 0.9);
+    cursor: pointer;
+}
+
