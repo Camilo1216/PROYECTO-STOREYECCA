@@ -1,11 +1,22 @@
-<!DOCTYPE html>
+<?php
+ include '../php/conexion_be.php';
+    $dato_recibido = $_GET['id'];
+    
+    $correo = "SELECT correo_electronico_administrador FROM administrador WHERE id= '$dato_recibido'";
+    $correo_administrador = mysqli_query($conexion,$correo);
+
+    $correo_administrador = mysqli_fetch_assoc($correo_administrador)['correo_electronico_administrador'];
+    // echo "CORREO ADMINISTRADOR ==> ".$correo_administrador;
+    // echo "ID ADMINISTRADOR ==> ".$dato_recibido;
+?>
+    <!DOCTYPE html>
 <html>
 <head>
     
     <link rel="stylesheet" href="../css/style_pag_administrador.css">
     <title>ADMINISTRADOR</title>
     <div class="contenedor_caja_usuario">
-        <p>hola malparidos todos</p>
+        <p><?php  echo $correo_administrador;?></p>
     </div>
 </head>
 <body>
@@ -43,5 +54,3 @@
     <script src="../js/scrip_administrador.js"></script>
 </body>
 </html>
-
-
