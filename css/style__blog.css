@@ -63,24 +63,31 @@ header{
 .container{
     width: max-content;
     margin-top: 80px;
-    padding-left: 20px 20px;
+    padding-left: 55px;
     border-radius: 6px;
-
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
 }
 
-.productos{
-                         /*tiempo que toma la transcion*/
-    transition: box-shadow 0.3s ease;/*demorabilidad de la cinematicas*/
-    background-color: #fff;
-    /*vertical,horizontal*/
-    margin: 20px 5px;
-    border-radius: 20px;
-    padding: 10px 0;
+.producto{
+    margin-bottom: 20px;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    background-color: #f2f2f2;
+    border-radius: 6px;
+    transition: box-shadow 0.3s ease; /* demorabilidad de la cinematicas */
     cursor: pointer;
-    
 }
-.productos:hover{
-    box-shadow: 0 0.4rem 0.7rem red;
+
+.producto:hover{
+    box-shadow: 0 3px 12px rgb(112, 68, 68);
+}
+.producto h2{
+    text-align: center;
+}
+.producto img{
+    width: 190px;
 }
 
 footer{
@@ -99,4 +106,21 @@ footer{
     margin: 7px 7px;
     width: 40px;
     margin-top: 10px;
+}
+
+.btn_detalle_carrito button{
+    padding: 5px 5px;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: grab;
+    border: none;
+}
+#boton_detalles:hover{
+    background-color: rgb(54, 167, 54);
+    transition: background-color 0.4s ease;
+}
+
+#boton_carrito:hover{
+    background-color: rgb(226, 226, 60);
+    transition: background-color 0.4s ease;
 }

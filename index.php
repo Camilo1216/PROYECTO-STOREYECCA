@@ -33,14 +33,21 @@
     <header><!-- se utiliza para poder agrupar link o logo-->
         <h1 id="titulo">S T O R E Y E C C A</h1>
     </header>
-
-    <div class="container"><!--sirve para definir las secciones de nuestra app-->
-        <div class="productos"><!--definir contenido independiente-->
-            <h2>PANTALONES</h2>
-            <P>Unicos en su estilo</P>
-            <img src="img/pantalon.jpg">
-            <p>descripcion:</p>
-        </div>
+    <div class="container">
+        <?php include 'php/conexion_be.php';
+        foreach ($conexion->query("SELECT * FROM crear_productos") as $row) {?>
+            <div class="producto">
+                <h2><?php echo $row['nombre_producto'] ?></h2>
+                <img src="img/<?php echo $row['imagen_producto'] ?>">
+                <p>Descripcion: <?php echo $row['descripcion_producto'] ?></p>
+                <h2>$ <?php echo $row['valor_producto'] ?></h2>
+                <div class="btn_detalle_carrito">
+                <button id="boton_detalles" type="submit">DETALLES</button>
+                <button id="boton_carrito" type="submit">CARRITO</button>
+                </div>
+                
+            </div>
+        <?php }?>
     </div>
     <footer><!-- pie de pag-->
         <div class="enlaces">
