@@ -78,6 +78,7 @@ header{
     border-radius: 6px;
     transition: box-shadow 0.3s ease; /* demorabilidad de la cinematicas */
     cursor: pointer;
+
 }
 
 .producto:hover{
