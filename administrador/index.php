@@ -11,7 +11,7 @@
 <html>
 <head>
     
-    <link rel="stylesheet" href="../css/style_administrador.css">
+    <link rel="stylesheet" href="../css/style__administrador.css">
     <title>ADMINISTRADOR</title>
     <div class="contenedor_caja_usuario">
         <p><?php  echo $correo_administrador;?></p>

@@ -1,16 +1,20 @@
-html {
+*{
     font-family: 'Bebas Neue', sans-serif;
     font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
 }
-.contenedor_todo{
-    padding: auto;
+header h1{
+    font-size: 55px;
+    text-align: center;
+}
+
+#btn_iniciar_sesion{
     position: absolute;
     right: 10px;
     top: 20px;
 } 
 
-.btn_iniciar_registrarse button{
-
+#btn_iniciar_sesion{
     padding: 10px 10px;
     margin: auto;
     width: auto;
@@ -20,13 +24,13 @@ html {
     display: block;
 }
 
-
-.btn_iniciar_registrarse button:hover{
+#btn_iniciar_sesion:hover{
     background-color: rgb(87, 87, 182);
     color: #fff;
     cursor: pointer;
     
 }
+
 .contenedor_caja_usuario{
     background-color: rgb(243, 199, 138);
     color: black;
@@ -37,7 +41,7 @@ html {
     top: 0px;
     position: absolute;
     right: 10px;
-    font-display: none;
+    display: none;
     
 }
 .contenedor_caja_usuario:hover{
@@ -56,19 +60,15 @@ header{
     padding: 40px;
 }
 
-header h1{
-    font-size: 55px;
-    text-align: center;
-}
-
 .container{
     width: max-content;
-    margin: 0 auto;
-    /* background-color: chartreuse; */
+    margin-top: 80px;
+    padding-left: 20px 20px;
     border-radius: 6px;
+
 }
 
-section article{
+.productos{
                          /*tiempo que toma la transcion*/
     transition: box-shadow 0.3s ease;/*demorabilidad de la cinematicas*/
     background-color: #fff;
@@ -79,26 +79,24 @@ section article{
     cursor: pointer;
     
 }
-section article:hover{
+.productos:hover{
     box-shadow: 0 0.4rem 0.7rem red;
 }
 
-section article h2, section article p{
-    margin: 7px;
-}
-
 footer{
+    width: 100%;
+    position: absolute;
     background-color: blue;
-    padding: 15px;
     color: #fff;
 }
 
-footer section{
-    float: right;
+#contacto{
+    position: absolute;
+    right: 0;
 }
 
-a:hover {
-    cursor: pointer;
-    color: azure;
+#contacto img{
+    margin: 7px 7px;
+    width: 40px;
+    margin-top: 10px;
 }
-

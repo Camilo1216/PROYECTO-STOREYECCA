@@ -17,20 +17,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style__blog.css">
 
-    <div class="contenedor_todo">
-        <div class="btn_iniciar_registrarse">
-            <button id="btn_iniciar_sesion" onclick="redireccionar()" type="submit">INICIAR SESION</button>
-        </div>
-        <div class="contenedor_caja_usuario">
-            <p><?php  echo $correo_usuarios;?></p>
-        </div>
-        <script>
-            function redireccionar() {
-              window.location.href = "iniciar_sesion.php";
-            }
-        </script>
-        
+
+    <button id="btn_iniciar_sesion" onclick="redireccionar()" type="submit">INICIAR SESION</button>
+    <div class="contenedor_caja_usuario">
+        <p><?php  echo $correo_usuarios;?></p>
     </div>
+    <script>
+        function redireccionar() {
+            window.location.href = "iniciar_sesion.php";
+        }
+    </script>
 
 </head>
 <body>
@@ -38,33 +34,20 @@
         <h1 id="titulo">S T O R E Y E C C A</h1>
     </header>
 
-    <section class="container"><!--sirve para definir las secciones de nuestra app-->
-        <article class="post"><!--definir contenido independiente-->
+    <div class="container"><!--sirve para definir las secciones de nuestra app-->
+        <div class="productos"><!--definir contenido independiente-->
             <h2>PANTALONES</h2>
             <P>Unicos en su estilo</P>
             <img src="img/pantalon.jpg">
             <p>descripcion:</p>
-        </article>
-        <article class="post"><!--definir contenido independiente-->
-            <h2>PANTALONES 2</h2>
-            <P>Unicos en su estilo</P>
-            <img src="img/pantalon2.jpg">
-            <p>descripcion:</p>
-        </article>
-        <article class="post"><!--definir contenido independiente-->
-            <h2>PANTALONES 3</h2>
-            <P>Unicos en su estilo</P>
-            <img src="img/pantalon3.jpg">
-            <p>descripcion:</p>
-        </article>
-    </section>
-
+        </div>
+    </div>
     <footer><!-- pie de pag-->
-        <section>
+        <div class="enlaces">
             <a id="link" href="#titulo">ir al comienzo</a>
-        <a target="_blank" href="https://instagram.com"><img src="img/instagram.jpg" width="30px"></a>
-        </section>
-        <div>yeimer estupinan</div>
+            <a id="contacto" target="_blank" href="https://instagram.com"><img src="img/instagram.jpg"></a>
+        </div>
+            <p>yeimer estupinan</p>
     </footer>
     <script src="js/script_index.js"></script>
 </body>
