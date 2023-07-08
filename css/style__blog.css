@@ -17,17 +17,37 @@ html {
     border: 0px;
     border-radius: 7px;
     box-shadow: 4px 4px rgba(0, 0, 0, 0.3);
+    display: block;
 }
 
 
 .btn_iniciar_registrarse button:hover{
     background-color: rgb(87, 87, 182);
     color: #fff;
+    cursor: pointer;
+    
+}
+.contenedor_caja_usuario{
+    background-color: rgb(243, 199, 138);
+    color: black;
+    font-size: 16px;
+    padding: 3px 16px;
+    border-radius: 4px;
+    margin: 7px 10px;
+    top: 0px;
+    position: absolute;
+    right: 10px;
+    font-display: none;
+    
+}
+.contenedor_caja_usuario:hover{
+    background-color: rgb(202, 166, 116);
+    cursor: pointer;
 }
 
 body{
     margin: 0;
-    background-color: rgb(75, 194, 75);
+    background-color: rgb(51, 185, 62);
 }
 
 header{

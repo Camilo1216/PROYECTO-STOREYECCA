@@ -52,6 +52,25 @@ body{
     transition: left 600ms;
 }
 
+.lista_productos{
+    max-width: 100%;
+    padding: 40px 8px;
+    margin: 10px 0px;
+    top: 60px;
+    background-color: #e7e2e2;
+    position: absolute;
+    border-radius: 8px;
+    display: none;
+    transition: left 600ms;
+    height: 590px;
+    overflow: scroll;
+}
+
+.tabla_productos th, .tabla_productos td{
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 3px;
+}
 
 .formulario_crear_producto input,
 .formulario_crear_categoria input{
@@ -62,7 +81,8 @@ body{
 .boton_categoria button,
 .boton_producto button,
 .boton_lista_productos button,
-.boton_pedidos button{
+.boton_pedidos button,
+.lista_productos button{
     padding: 10px 40px;
     border: 2px solid rgb(255, 255, 255, 0,1);
     background: transparent;
@@ -81,7 +101,8 @@ body{
 .boton_categoria button,
 .boton_producto button,
 .boton_lista_productos button,
-.boton_pedidos button{
+.boton_pedidos button,
+.lista_productos button{
     margin-top:30px;
 }
 
@@ -94,15 +115,32 @@ color: #fff;
     background-color: rgb(51, 51, 141, 0.9);
     cursor: pointer;
 }
+#btn_eliminar{
+    padding: 2px;
+    font-size: 12px;
+}
+#btn_editar{
+    padding: 2px;
+    font-size: 12px;
+    background-color: rgb(82, 146, 82);
+    cursor: pointer;
+}
+#btn_editar:hover{
+    background-color: green;
+}
 
 #boton_cancelar,
-#boton_cancelar1{
+#boton_cancelar1,
+#boton_cancelar3,
+#btn_eliminar{
     background-color: rgb(194, 26, 26, 0.8);
     color: #fff;
 }
 
 #boton_cancelar:hover,
-#boton_cancelar1:hover{
+#boton_cancelar1:hover,
+#boton_cancelar3:hover,
+#btn_eliminar:hover{
     background-color: rgb(112, 32, 32, 0.9);
     cursor: pointer;
 }
